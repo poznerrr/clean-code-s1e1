@@ -53,7 +53,9 @@
   list-style: none;
 }
 
-.input, .checkbox, .btn{
+.input,
+.checkbox,
+.btn {
   outline: none;
 }
 
