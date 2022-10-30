@@ -12,7 +12,7 @@
   text-align: right;
 }
 
-.header-img {
+.header__img {
   width: 100%;
 }
 
@@ -34,27 +34,31 @@
   margin: 0 auto 0;
 }
 
-.task {
+.new-task__input,
+.item__input,
+.item__label {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
 
-.task-row-wrapper {
+.new-task__wrapper {
   display: flex;
 }
 
-.list {
+.list,
+.list_done {
   margin: 0;
   padding: 0px;
 }
 
-.list-item {
+.item {
   list-style: none;
 }
 
-.input,
-.checkbox,
+.new-task__input,
+.item__input,
+.item__checkbox,
 .btn {
   outline: none;
 }
@@ -74,8 +78,8 @@
 }
 
 /* Heading */
-.paragraph,
-.new-task-label {
+.tasks__subtitle,
+.new-task__subtitle {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -85,7 +89,8 @@
   text-transform: uppercase;
 }
 
-.input {
+.new-task__input,
+.item__input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -98,22 +103,23 @@
   color: #888;
 }
 
-.input:focus {
+.item__input:focus,
+.new-task__input:focus {
   color: #333;
 }
 
 /* New Task */
-.new-task-label {
+.new-task__subtitle {
   display: block;
   margin: 0 0 20px;
 }
 
-#new-task {
+.new-task__input {
   width: 318px;
 }
 
 /* Task list */
-.list-item {
+.item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -122,47 +128,47 @@
   align-items: center;
 }
 
-.list-item > .checkbox {
+.item__checkbox {
   margin: 0 10px;
 }
 
-.list-item > .label {
+.item__label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.list-item > .input {
+.item__input {
   width: 226px;
 }
 
-.delete-img {
+.item__delete-img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.delete-img:hover {
+.item__delete-img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-#completed-tasks .label {
+.list_done .item__label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.list-item .input {
+.item__input {
   display: none;
 }
 
-.edit-mode .input {
+.item_edit .item__input {
   display: inline-block;
   width: 224px;
 }
 
-.edit-mode .label {
+.item_edit .item__label {
   display: none;
 }
